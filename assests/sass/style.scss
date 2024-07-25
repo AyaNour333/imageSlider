@@ -44,12 +44,12 @@ body{
             background-size: cover;
             background-position: center;
             display: inline-block;
-            transition: all .5s;
+            transition: all .6s;
             -webkit-transition: all .6s;
             -moz-transition: all .6s;
             -ms-transition: all .6s;
             -o-transition: all .6s;
-            @media (max-width:576px) {
+            @media(max-width:576px) {
                 &{
                     width: 180px;
                     height: 215px;
@@ -183,12 +183,17 @@ body{
         position: absolute;
         z-index: 1000;
         left: 50%;
-        bottom: 50px;
+        bottom: 30px;
         transform: translateX(-50%);
         -webkit-transform: translateX(-50%);
         -moz-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
+        @media (max-width:767px) {
+            &{
+                bottom: 50px;
+            }
+        }
         button{
             background-color: #ffffff21;
             width: 40px;
